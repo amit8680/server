@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="Script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="MainPage.css" />
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div class="main">
+      <input type="checkbox" id="drop-5" hidden />
+      <label
+        onclick="getCountries(); this.onclick=null;"
+        class="dropHeader dropHeader-5"
+        for="drop-5"
+        >Countries</label
+      >
+      <div id="list list-5" class="list list-5"></div>
+      <fieldset>
+        <legend>Continent</legend>
+        <input
+          type="checkbox"
+          name="continent"
+          value="Cats"
+          checked
+        />Asia<br />
+        <input
+          type="checkbox"
+          name="continent"
+          value="Dogs"
+          checked
+        />Europe<br />
+        <input
+          type="checkbox"
+          name="continent"
+          value="Birds"
+          checked
+        />Americas<br />
+        <input
+          type="checkbox"
+          name="continent"
+          value="Birds"
+          checked
+        />Africa<br />
+        <input
+          type="checkbox"
+          name="continent"
+          value="Birds"
+          checked
+        />Oceania<br />
+        <br />
+        <input type="submit" value="Fillter" onclick="reload()" />
+      </fieldset>
+    </div>
+    <div id="databox" class="databox"></div>
+  </body>
+</html>

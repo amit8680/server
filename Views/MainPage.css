@@ -1,0 +1,78 @@
+html {
+  background: #2980b9;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #2980b9;
+  display: flex;
+  flex-wrap: row;
+}
+
+.main {
+  text-align: left;
+}
+label {
+  text-align: center;
+  width: 190px;
+  position: absolute;
+  line-height: 45px;
+  background-color: rgb(147, 197, 204);
+  padding-left: 0px;
+  font-weight: 700;
+}
+.list {
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 0px;
+  border-top: 1px solid rgb(147, 197, 204);
+  opacity: 0;
+  overflow-y: scroll;
+  height: 300px;
+  width: 190px;
+}
+.item {
+  width: auto;
+  line-height: 45px;
+  padding-left: 20px;
+  background-color: rgb(147, 197, 204);
+  font-weight: 400;
+}
+.databox {
+  border: 5px solid gray;
+  position: fixed;
+  bottom: 203px;
+  width: 80%;
+  text-align: -webkit-center;
+  height: 10%;
+  background-color: rgb(147, 197, 204);
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: underline;
+}
+fieldset {
+  position: absolute;
+  left: 210px;
+  width: 100px;
+  border-width: 2px !important;
+  border-style: groove !important;
+  border-color: threedface !important;
+  border-image: initial !important;
+}
+/**********
+***********/
+
+.list-5 {
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  z-index: 10;
+}
+#drop-5:checked ~ .list-5 {
+  visibility: visible;
+  opacity: 2;
+}
+#drop-5:checked ~ .list-5 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
